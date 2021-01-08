@@ -1,0 +1,39 @@
+.header {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  border-radius: 2px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  background-color: rgb(16, 65, 71);
+  font-size: 1.5vw;
+  color: white;
+}
+img {
+  width: 4.5vw;
+}
+
+.header__brand {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding: 0.2em;
+}
+.header__title {
+}
+.header__nav {
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__nav a {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header__nav a.router-link-exact-active {
+  color: #ffffff;
+}

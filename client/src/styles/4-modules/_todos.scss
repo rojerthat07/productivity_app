@@ -1,0 +1,109 @@
+.todos-container {
+  width: 50%;
+  margin: auto;
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #6ecaa1;
+  color: white;
+  user-select: none;
+  font-size: 1.2vw;
+}
+
+.todos__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: right;
+  padding: 1em;
+  text-transform: capitalize;
+}
+
+.todos__header-one {
+  text-transform: capitalize;
+  display: grid;
+  align-items: center;
+  align-content: left;
+  justify-content: left;
+  grid-column-gap: 0.4em;
+}
+.todos__header-two {
+  display: grid;
+  justify-content: right;
+}
+
+.todos__date {
+  text-transform: capitalize;
+  &--date {
+    text-align: right;
+    grid-row: 1 / span 2;
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+    height: auto;
+
+    align-self: center;
+  }
+  &--month {
+    font-size: 1.1vw;
+    text-transform: capitalize;
+    grid-row: 1;
+    grid-column: 2;
+    align-self: flex-end;
+  }
+  &--year {
+    font-size: 1.1vw;
+    text-transform: capitalize;
+    align-self: baseline;
+    grid-column: 2;
+  }
+  &--day {
+    text-transform: capitalize;
+    align-self: center;
+    font-size: 1.5vw;
+  }
+}
+.todos {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+}
+.todos__title {
+  font-size: 1em;
+}
+.todos__item {
+  padding: 0rem 1rem;
+  font-size: 0.8em;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.todos__checkbox {
+  color: rgb(36, 109, 119);
+  padding-right: 0.5em;
+  transition: 0.5s;
+  font-size: 0.8em;
+  &:hover {
+    color: white;
+  }
+}
+
+.todos__item-container {
+  display: block;
+  position: relative;
+
+  margin: 0.5em 0;
+  cursor: pointer;
+  font-size: 1.4em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  max-width: none;
+}
+.todos__icon {
+  color: rgba(94, 250, 3, 0.76);
+  position: absolute;
+  bottom: 22px;
+  left: 5px;
+  cursor: pointer;
+}

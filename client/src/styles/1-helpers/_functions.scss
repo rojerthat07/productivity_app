@@ -1,0 +1,14 @@
+$fontVariant: (
+  "font1": "Nunito ExtraLight",
+  "font2": "Nunito Light",
+  "font3": "Nunito",
+  "font4": "Nunito Regular",
+  "font5": "Nunito Semi-bold",
+  "font6": "Nunito Bold",
+  "font7": "Nunito Extra-bold",
+  "font8": "Nunito Black",
+);
+
+@function font($fontName) {
+  @return map-get($fontVariant, $fontName);
+}

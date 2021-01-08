@@ -1,0 +1,58 @@
+.login {
+  width: 50%;
+  margin: auto;
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #6ecaa1;
+  color: white;
+  user-select: none;
+  font-size: 1.2vw;
+  padding: 2em 0;
+
+  .login__heading {
+    font-size: 3vw;
+    margin: 0.5em 0;
+  }
+
+  .login__form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .login__input {
+    border: none;
+    flex: 10;
+    padding: 10px;
+    outline: 0;
+    width: 70%;
+
+    margin: 0.5em auto;
+  }
+  .login__submit {
+    padding: 0.3em 0.5em;
+    cursor: pointer;
+    font-size: 2vw;
+    font-weight: bold;
+    color: #6ecaa1;
+    background-color: white;
+    margin: 0.5em auto;
+    border-radius: 2px;
+    transition: 1s;
+    border: none;
+    outline: none;
+    &--disabled {
+      transform: translate(0, -5px); /* IE 9 */
+      // background-color: #0d4658;
+      color: black;
+    }
+    &:hover {
+      transform: scale(1.1, 1.1);
+      color: black;
+      background-color: #6ecaa1;
+    }
+    &:active {
+      transform: scale(1, 1);
+      background-color: rgb(231, 231, 231);
+    }
+  }
+}
